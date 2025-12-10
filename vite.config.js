@@ -20,7 +20,7 @@ export default defineConfig({
         ws: true,
         secure: false
       },
-      '^/xpnl/.': {  // Changed to match all admin routes
+      '^/admin/.*': {  // Changed to match all admin routes
         target: 'http://localhost:3000',
         secure: false,
         changeOrigin: true
