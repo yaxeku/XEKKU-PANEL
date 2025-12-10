@@ -134,7 +134,7 @@ const LoginPage = () => {
                 </button>
 
                 <h2 className="text-3xl font-bold text-white mb-2">
-                  Luna Panel
+                  Xekku Panel
                 </h2>
 
                 <div className={`inline-flex items-center px-3 py-1 rounded-full border

@@ -31,7 +31,7 @@ const MacOSLayout = ({ children, activeView, onViewChange }) => {
               <User className="w-6 h-6" />
             </div>
             <div className="flex-1">
-              <div className="font-medium text-white">Luna Panel</div>
+              <div className="font-medium text-white">Xekku Panel</div>
               <div className={`text-xs px-2 py-0.5 rounded inline-block mt-1 ${
                 userRole === 'admin'
                   ? 'text-blue-400 bg-blue-500/20'
@@ -39,7 +39,7 @@ const MacOSLayout = ({ children, activeView, onViewChange }) => {
               }`}>
                 {userRole === 'admin' ? 'ADMIN' : 'CALLER'}
               </div>
-              <div className="text-xs text-gray-500 mt-1">All-in-One Dashboard</div>
+              <div className="text-xs text-gray-500 mt-1">Dashboard</div>
             </div>
           </div>
         </div>
