@@ -35,10 +35,10 @@ function AdminSocketProvider({ children }) {
     const serverUrl = getServerUrl();
 
     // Get auth info from localStorage
-    const authData = JSON.parse(localStorage.getItem('adminAuth') || '{}');
-    const userRole = authData.role || 'admin';
-    const currentUser = authData.username || 'Admin';
-    const authToken = authData.token || '123'; // Use actual token for callers, default for admin
+    const authData = JSON.parse(localStorage.getItem('adminAuth'));
+    const userRole = authData.role;
+    const currentUser = authData.username;
+    const authToken = authData.token; // Use actual token for callers, default for admin
 
     // Change '/admin' to match the new route structure
     const newSocket = io('/admin', {  // Remove the serverUrl concatenation

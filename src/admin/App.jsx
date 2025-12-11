@@ -31,6 +31,17 @@ const AppContent = () => {
     return <LoginPage />;
   }
 
+  if (!isConnected) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-[#0A0A0A]">
+        <div className="text-center">
+          <h1 className="text-2xl font-bold text-gray-100 mb-2">Connecting to server...</h1>
+          <p className="text-gray-400">Please wait while we establish connection</p>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <MacOSLayout activeView={activeView} onViewChange={setActiveView}>
       <div className={`
