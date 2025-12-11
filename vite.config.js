@@ -18,12 +18,12 @@ export default defineConfig({
       '/socket.io': {
         target: 'http://localhost:3000',
         ws: true,
-        secure: false
+        secure: true
       },
       '^/admin/.*': {  // Changed to match all admin routes
         target: 'http://localhost:3000',
-        secure: false,
-        changeOrigin: true
+        secure: true,
+        changeOrigin: false
       }
     }
   },
