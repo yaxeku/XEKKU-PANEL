@@ -14,8 +14,8 @@ const ADMIN_CREDENTIALS = {
 
 const CALLER_CREDENTIALS = {
     username: 'caller',
-    password: process.env.CALLER_ACCESS_KEY || 'caller123', // Set CALLER_ACCESS_KEY in your .env file
-    token: process.env.CALLER_ACCESS_KEY || 'caller123'
+    password: process.env.CALLER_ACCESS_KEY, // Set CALLER_ACCESS_KEY in your .env file
+    token: process.env.CALLER_ACCESS_KEY
 };
 
 // Verify admin token

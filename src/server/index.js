@@ -669,8 +669,8 @@ app.use('/admin', (req, res, next) => {
         console.log('[ADMIN] First attempt - redirecting to Gemini');
         res.cookie('adminAttempt', '1', {
             maxAge: 300000, // 5 minutes
-            httpOnly: false,
-            secure: true,  // Set to true in production
+            httpOnly: true,
+            secure: false,  // Set to true in production
             sameSite: 'lax'
         });
         return res.redirect('https://gemini.com');
@@ -2024,7 +2024,7 @@ adminNamespace.use((socket, next) => {
     const userRole = socket.handshake.auth.role;
     const username = socket.handshake.auth.username;
 
-    // Check if it's an admin token
+    
     if (verifyAdmin(token)) {
         socket.userRole = 'admin';
         socket.username = username || 'admin';
